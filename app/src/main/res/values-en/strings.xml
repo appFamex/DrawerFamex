@@ -357,4 +357,7 @@ Your information may be transferred to companies in other countries. By using th
     <string name="MENU_TXT_PREFMX">PREFAMEX</string>
     <string name="MENU_TXT_Config">Settings</string>
 
+    <!-- Restaurantes -->
+    <string name="TMP_RESTAURANTES">Coming soon</string>
+
 </resources>

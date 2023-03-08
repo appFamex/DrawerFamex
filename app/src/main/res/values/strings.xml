@@ -390,5 +390,8 @@ Su información puede ser transferida a empresas de otros países. Al usar el se
 
     <string name="p_prefamex" translatable="false">pPrefamex</string>
 
+    <!-- Restaurantes -->
+    <string name="TMP_RESTAURANTES">Próximamente</string>
+
 
 </resources>

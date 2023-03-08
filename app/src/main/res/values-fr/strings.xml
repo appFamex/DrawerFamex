@@ -354,4 +354,7 @@ Vos informations peuvent être transférées à des sociétés dans d\'autres pa
     <string name="MENU_TXT_PREFMX">PREFAMEX</string>
     <string name="MENU_TXT_Config">Paramètres</string>
 
+    <!-- Restaurantes -->
+    <string name="TMP_RESTAURANTES">Prochainement</string>
+
 </resources>
