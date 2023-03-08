@@ -31,9 +31,10 @@ public class pRestaurantes extends pMenu {
         setContentView(R.layout.activity_food_court);
         super.onCreate(savedInstanceState);
         setMenu();
-        PDFView pdfView = findViewById(R.id.pdfView);
+
+       /*  pdfViewPDFView = findViewById(R.id.pdfView);
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-        int idioma = prefs.getInt(IDIOMA_POP, 0);
+        int idioma = prefs.getInt(IDIOMA_POP, 0); */
 
         /*
         File pdfFile = new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "recursos"+File.separator+"PDF9"+ "." + "pdf");
@@ -44,6 +45,8 @@ public class pRestaurantes extends pMenu {
             pdfView.fromAsset("menuejem.pdf").load();
         }
         */
+
+        /*
         File pdfFileES = new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "recursos"+File.separator+"PDF9"+ "." + "pdf");
         File pdfFileFR = new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "recursos"+File.separator+"PDF3"+ "." + "pdf");
         File pdfFileEN = new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "recursos"+File.separator+"PDF4"+ "." + "pdf");
@@ -69,17 +72,9 @@ public class pRestaurantes extends pMenu {
             }
         }
 
-
-
-
-
-
-
-
-
         pdfView.setMinZoom(1);
         pdfView.setMidZoom(3);
-        pdfView.setMaxZoom(5);
+        pdfView.setMaxZoom(5); */
 
 
 
