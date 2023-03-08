@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.178" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aab_2_registro.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aac_3_principal.xml" value="0.33" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aae_5_evento.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aaf_6_conferencias_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aag_7_pabellones.xml" value="0.26268115942028986" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aag_7_pabellones_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aag_pabellones_boton.xml" value="0.12552083333333333" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aah_8_chalets.xml" value="0.2" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aah_8_chalets_fragment.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aah_8_chalpabfragment.xml" value="0.33" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aai_9_expo_estatica.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aak_11_francia.xml" value="0.43148148148148147" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aal_12_popup.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aam_13_popup_1.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aam_13_popup_2.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aam_13_popup_3.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aam_13_popup_4.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aan_14_prefamex.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aao_15_hoteles.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aao_15_hoteles_imghotel.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aap_16_popup.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aap_16_rutas.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aar_18_configuracion.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aar_18_popup.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aas_19_reportar.xml" value="0.25" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aat_20_contactos.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aav_21_acerca_de.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aav_21_popup.xml" value="0.1" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aax_23_perfil.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/activity_mapa_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/fragment_frag_popup_expo_estatica.xml" value="0.25" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/fragment_frag_popup_ventana.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/itemlayout_itinerario.xml" value="0.12552083333333333" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/main_nav_drawer.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.207" />
+        <entry key="..\:/Users/YO/Documents/Respaldo/FamexAppv0.1.2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.207" />
+        <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aac_3_principal.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aao_15_hoteles.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aao_15_hoteles_imghotel.xml" value="0.27291666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
