@@ -33,7 +33,9 @@ public class pInicio extends pMenu {
     private List<CarouselItem> list = new ArrayList<>();//Array for the items in the Slide
     private List<CarouselItem> list2 = new ArrayList<>();//Array for the items in the Second Slide
     private ImageView Itinerario,Layout;
-
+    private String link1 = "https://chat.openai.com/chat";
+    private String link2 = "https://www.google.com/";
+    private String link3 = "https://www.spellboy.com/corrector-gramatical/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -2,8 +2,8 @@ package com.example.drawerfamex.backend;
 
 import com.example.drawerfamex.backend.interfaces.LoginClient;
 import com.example.drawerfamex.backend.interfaces.SecurityClient;
-import com.example.drawerfamex.backend.models.MessageLogin;
-import com.example.drawerfamex.backend.models.User;
+import com.example.drawerfamex.backend.models.login.MessageLogin;
+import com.example.drawerfamex.backend.models.login.User;
 import com.example.drawerfamex.backend.utils.FamexException;
 
 import retrofit2.Call;

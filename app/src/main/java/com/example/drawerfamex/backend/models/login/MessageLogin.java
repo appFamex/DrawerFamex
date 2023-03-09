@@ -1,6 +1,7 @@
-package com.example.drawerfamex.backend.models;
+package com.example.drawerfamex.backend.models.login;
 
 
+import com.example.drawerfamex.backend.models.Message;
 import com.google.gson.Gson;
 
 import lombok.Data;

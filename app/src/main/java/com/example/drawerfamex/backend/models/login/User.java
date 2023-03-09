@@ -1,4 +1,4 @@
-package com.example.drawerfamex.backend.models;
+package com.example.drawerfamex.backend.models.login;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.example.drawerfamex.backend.models;
+package com.example.drawerfamex.backend.models.login;
 
 import lombok.Data;
 
@@ -6,7 +6,6 @@ import lombok.Data;
 public class Role {
 
     private String name;
-
     private String description;
 
 }

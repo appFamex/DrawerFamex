@@ -1,4 +1,4 @@
-package com.example.drawerfamex.backend.models;
+package com.example.drawerfamex.backend.models.login;
 
 import java.math.BigDecimal;
 import java.util.Date;

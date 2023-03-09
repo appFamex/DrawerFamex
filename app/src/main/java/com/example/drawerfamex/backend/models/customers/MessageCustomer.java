@@ -1,4 +1,4 @@
-package com.example.drawerfamex.backend.models;
+package com.example.drawerfamex.backend.models.customers;
 
 import com.example.drawerfamex.backend.models.customers.Customer;
 

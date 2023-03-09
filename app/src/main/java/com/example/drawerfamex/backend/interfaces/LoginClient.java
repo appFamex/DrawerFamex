@@ -1,6 +1,6 @@
 package com.example.drawerfamex.backend.interfaces;
 
-import com.example.drawerfamex.backend.models.MessageLogin;
+import com.example.drawerfamex.backend.models.login.MessageLogin;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
