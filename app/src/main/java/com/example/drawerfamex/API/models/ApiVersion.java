@@ -11,12 +11,8 @@ public class ApiVersion {
     private List<ApiFichaInicio> fichasInicio;
     private List<ApiFichaAnuncio> fichasAnuncios;
     private List<ApiFichaHoteles> fichasHoteles;
-//APIS NUEVAS
-    private List<ApiCustomers> fichaCustomers;
-    private List<ApiLogin> fichaLogin;
-    private List<ApiSecurity> fichaSecurity;
 
-    private List<ApiCustomers> fichaVersion;
+
 
     private ApiFichaFrancia fichaFrancia;
     private ApiFichaPDFS fichaPDFs;
@@ -86,15 +82,7 @@ public class ApiVersion {
     }
 
 
-    //APIS NUEVAS
 
-    public List<ApiCustomers> getFichasCustomers() {
-        return fichaCustomers;
-    }
-
-    public void setFichaCustomers(List<ApiCustomers> fichaCustomers) {
-        this.fichaCustomers = fichaCustomers;
-    }
 
 
 }
