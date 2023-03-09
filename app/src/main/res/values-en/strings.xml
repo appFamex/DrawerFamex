@@ -145,6 +145,7 @@ the number of Nobel prizes or Field medals, show that France is one of the most 
     <string name="GR_BTN_comoLlegar">How\nTo Get There?</string>
     <string name="GR_BTN_rutas">routes</string>
     <string name="GR_BTN_PF">FREQUENTLY\nASKED QUESTIONS</string>
+    <string name="GR_BTN_pasabus">.</string>
 
     <!-- Pantalla HOTELES -->
     <string name="GR_hoteles_btnLink">Réserver</string>

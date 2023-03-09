@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import com.example.drawerfamex.adapters.pMenu;
 import com.example.drawerfamex.R;
 import com.example.drawerfamex.pantallas.prefamex.hoteles.pHoteles;
+import com.example.drawerfamex.pantallas.prefamex.rutas.fragPopUpRutas;
 import com.example.drawerfamex.pantallas.prefamex.rutas.pRutas;
 import com.example.drawerfamex.popups.tutorial.fragPantallaTutorial;
 
@@ -25,6 +26,7 @@ public class pPrefamex extends pMenu {
     private ConstraintLayout btnHoteles;
     private ConstraintLayout btnRutas;
     private ConstraintLayout btnCmLlegar;
+    private ConstraintLayout btnpasabus;
     private ImageView btnPregFrec;
     private String linkComollegar = "https://goo.gl/maps/GwWNcHE8FHrVQdgH9";
 
@@ -40,6 +42,7 @@ public class pPrefamex extends pMenu {
         btnHoteles = findViewById(R.id.ConstrainBTNhoteles);
         btnCmLlegar = findViewById(R.id.ConstrainBTNcmLlegar);
         btnRutas = findViewById(R.id.ConstrainBTNrutas);
+        btnpasabus = findViewById(R.id.ConstrainBTNpasaBus);
         btnPregFrec = findViewById(R.id.gr_btn_pregFrec);
 
         //Uso Botones
@@ -65,6 +68,19 @@ public class pPrefamex extends pMenu {
             }
         });
 
+
+
+
+        fragPopUpPasabus bus = new fragPopUpPasabus();
+        btnpasabus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //startButtonAnimation1(btnpasabus,fragPopUpPasabus.class);
+                bus.show(getSupportFragmentManager(),"DialogFrag");
+
+            }
+        });
+
         btnPregFrec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,7 +94,7 @@ public class pPrefamex extends pMenu {
         super.onResume();
         //Pantalla tutorial
 
-    /*    SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
         boolean previouslyStarted = prefs.getBoolean(getString(R.string.p_prefamex), false);
 
         if(!previouslyStarted) {
@@ -87,7 +103,7 @@ public class pPrefamex extends pMenu {
             edit.commit();
             fragPantallaTutorial popup = new fragPantallaTutorial(18);
             popup.show(getSupportFragmentManager(),"DialogFrag");
-        }*/
+        }
     }
 
     //Animation BTN como llegar

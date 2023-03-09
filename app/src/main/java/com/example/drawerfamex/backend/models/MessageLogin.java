@@ -14,6 +14,7 @@ public class MessageLogin extends Message {
     public Boolean getPicture;
     public String user;
     public List<User> users;
+    public UserAccount account;
 
     public String toJson() {
         return new Gson().toJson(this);

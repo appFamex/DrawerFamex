@@ -20,8 +20,8 @@
             android:id="@+id/pfmx_1_txt_titulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="160dp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginTop="240dp"
+            android:layout_marginEnd= "30dp"
             android:fontFamily="@font/plateiabold"
             android:gravity="center"
             android:lineSpacingExtra="8sp"
@@ -48,6 +48,8 @@
                     android:id="@+id/include3"
                     layout="@layout/main_toolbar" />
             </LinearLayout>
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -108,7 +110,7 @@
                     android:id="@+id/ConstrainBTNhoteles"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="65">
+                    android:layout_weight="95">
 
                     <ImageView
                         android:id="@+id/gr_btn_hoteles"
@@ -151,7 +153,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="10"
+                android:layout_weight="5"
                 android:orientation="horizontal"></LinearLayout>
 
             <LinearLayout
@@ -164,7 +166,7 @@
                     android:id="@+id/ConstrainBTNcmLlegar"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="60">
+                    android:layout_weight="93">
 
                     <ImageView
                         android:id="@+id/gr_btn_comoLlegar"
@@ -207,7 +209,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="10"
+                android:layout_weight="5"
                 android:orientation="horizontal"></LinearLayout>
 
             <LinearLayout
@@ -220,7 +222,7 @@
                     android:id="@+id/ConstrainBTNrutas"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="50">
+                    android:layout_weight="88">
 
                     <TextView
                         android:id="@+id/pfmx_4_txt_btnRutas"
@@ -261,8 +263,66 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="17"
+                android:layout_weight="5"
                 android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/ConstrainBTNpasaBus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60">
+
+                    <ImageView
+                        android:id="@+id/gr_btn_pasaBus"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:src="@drawable/btn_pasabus" />
+
+                    <TextView
+                        android:id="@+id/pfmx_3_txt_pasaBus"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="95dp"
+                        android:layout_marginBottom="-20dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/plateiabold"
+                        android:gravity="center"
+                        android:text="@string/GR_BTN_pasabus"
+                        android:textColor="#EFEBE9"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="55">
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="horizontal"></LinearLayout>
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
