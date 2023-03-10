@@ -87,7 +87,7 @@
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
 
         <ScrollView
             android:id="@+id/scrollView4"
@@ -116,7 +116,7 @@
                 android:text="Al utilizar nuestro servicio de transporte por medio de la app, tendrás la confianza de viajar y llegar seguro a tu destino."
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:id="@+id/test"

@@ -16,6 +16,7 @@ public class MessageLogin extends Message {
     public String user;
     public List<User> users;
     public UserAccount account;
+    public List<User> refreshToken;
 
     public String toJson() {
         return new Gson().toJson(this);
