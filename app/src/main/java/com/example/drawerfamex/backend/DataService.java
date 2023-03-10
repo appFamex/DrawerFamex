@@ -3,6 +3,7 @@ package com.example.drawerfamex.backend;
 import com.example.drawerfamex.backend.interfaces.LoginClient;
 import com.example.drawerfamex.backend.interfaces.SecurityClient;
 import com.example.drawerfamex.backend.models.login.MessageLogin;
+import com.example.drawerfamex.backend.models.login.Role;
 import com.example.drawerfamex.backend.models.login.User;
 import com.example.drawerfamex.backend.utils.FamexException;
 
