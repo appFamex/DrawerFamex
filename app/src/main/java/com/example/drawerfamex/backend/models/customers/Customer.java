@@ -36,7 +36,7 @@ public class Customer {
     //phones
     private List<PhoneCustomer> phones;
     //adresses
-    private List<AddressCustomer> adresses;
+    private List<AddressCustomer> addresses;
     //invoiceInfo
     private InvoiceInfo invoiceinfo;
     //businessInfo
