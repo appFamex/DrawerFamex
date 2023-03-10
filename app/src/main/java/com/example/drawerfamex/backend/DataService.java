@@ -119,6 +119,14 @@ public class DataService {
 
             message.setUsers(users);
 
+            //  private String username; // "test_donde3@gmail.com",
+            //    private String password; // "!QAZ2wsx",
+            //    private String firstName; // "test",
+            //    private String lastName; // "test",
+            //    private String email; // "test_donde3@gmail.com",
+
+            //
+
             Call<MessageLogin> call = service.createUser(message);
 
             call.enqueue(new Callback<MessageLogin>() {
@@ -153,7 +161,7 @@ public class DataService {
         return responseMap;
     }
 
-    public HashMap<String, String> updateUser(String username, String password) throws FamexException {
+    public HashMap<String, String> updateUser(String firstName, String lastName) throws FamexException {
         final HashMap<String, String> responseMap = new HashMap<>();
 
         try {
@@ -167,8 +175,94 @@ public class DataService {
             MessageLogin message = new MessageLogin();
 
             User user = new User();
-            user.setUsername(username);
-            user.setPassword(password);
+            user.setFirstName(firstName);
+            user.setLastName(lastName);
+
+            List<User> users = new ArrayList<>();
+
+            users.add(user);
+
+            message.setUsers(users);
+
+            Call<MessageLogin> call = service.updateUser(message);
+
+            call.enqueue(new Callback<MessageLogin>() {
+
+                @Override
+                public void onResponse(Call<MessageLogin> call, Response<MessageLogin> response) {
+                    System.out.println("Codigo http respuesta: " + response.code());
+                    MessageLogin messageResponse = response.body();
+
+                    if (messageResponse.getStatusOperation().getStatus() == 0 && messageResponse.getUsers() != null && !messageResponse.getUsers().isEmpty()) {
+                        User userResponse = messageResponse.getUsers().get(0);
+
+                        responseMap.put("RefreshToken", userResponse.getAccessToken());
+                        responseMap.put("AuthToken", userResponse.getRefreshToken());
+                        responseMap.put("Username", userResponse.getUsername());
+                    } else {
+                        System.out.println("Error en el servicio: Codigo"
+                                + messageResponse.getStatusOperation().getStatus() + ", Descripcion: "
+                                + messageResponse.getStatusOperation().getDescription());
+                    }
+                }
+
+                @Override
+                public void onFailure(Call<MessageLogin> call, Throwable throwable) {
+                    System.out.println("Error en el servicio: " + throwable.getMessage());
+                }
+            });
+        } catch (Exception e) {
+            System.out.println("Error en la llamada: " + e.getMessage());
+        }
+
+        return responseMap;
+    }
+
+
+    public HashMap<String, String> registerCustomer(String firstName, String lastName) throws FamexException {
+        final HashMap<String, String> responseMap = new HashMap<>();
+
+        try {
+            Retrofit retrofit = new Retrofit.Builder()
+                    .baseUrl("http://a038559e72dc64ec4a602a8d10b97c08-26840281.us-east-2.elb.amazonaws.com:8762/security/")
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+
+            SecurityClient service = retrofit.create(SecurityClient.class);
+
+            MessageLogin message = new MessageLogin();
+
+            User user = new User();
+            user.setFirstName(firstName);
+            user.setLastName(lastName);
+
+            // private String segment; //"x",
+            //    private String idUser; // "121212",
+            //    private String userId; //"1212",
+            //    private String firstName; //"Mauricio",
+            //    private String lastName; //"Mendoza",
+            //    private String motherMaidenName; //"Mendoza",
+            //    private DateFormat birthDate; //"21/10/1997",
+            //    private Boolean active; //true,
+            //    private Integer idOccupation; // 1,
+            //    private Integer idEconomicActivity; // "1",
+            //    private String gender;// "H",
+            //    private String expirationId; //"",
+            //    private String numberId; // "",
+            //    private String countryOfIssue; //"",
+            //    private String nationality; //"MX",
+            //    private String birthState; //"MX",
+            //    private String photo;// "",
+            //    //emails
+            //    private List<EmailCustomer> emails;
+            //    //phones
+            //    private List<PhoneCustomer> phones;
+            //    //adresses
+            //    private List<AddressCustomer> addresses;
+            //    //invoiceInfo
+            //    private InvoiceInfo invoiceinfo;
+            //    //businessInfo
+            //    private BusinessInfo businessInfo;
 
             List<User> users = new ArrayList<>();
 
@@ -210,3 +304,9 @@ public class DataService {
         return responseMap;
     }
 }
+
+
+
+
+
+
