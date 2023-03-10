@@ -144,7 +144,7 @@ le nombre de prix Nobel et de médailles Field, montrent que la France est l'un 
     <string name="GR_BTN_comoLlegar">"Comment\ns'y rendre ?"</string>
     <string name="GR_BTN_rutas">routes</string>
     <string name="GR_BTN_PF">QUESTIONS\nFRÉQUENTES</string>
-    <string name="GR_BTN_pasabus">.</string>
+    <string name="GR_BTN_pasabus"> </string>
 
     <!-- Pantalla HOTELES -->
     <string name="GR_hoteles_btnLink">Réserver</string>

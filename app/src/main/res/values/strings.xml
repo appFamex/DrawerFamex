@@ -147,7 +147,7 @@ el número de premios Nobel o de medallas Field, demuestran que Francia es un po
     <string name="GR_BTN_comoLlegar">¿Cómo\nLlegar?</string>
     <string name="GR_BTN_rutas">rutas</string>
     <string name="GR_BTN_PF">PREGUNTAS\n FRECUENTES</string>
-    <string name="GR_BTN_pasabus">.</string>
+    <string name="GR_BTN_pasabus"> </string>
 
     <!-- Pantalla Hoteles -->
     <string name="GR_hoteles_btnLink">Reserva</string>

@@ -73,6 +73,8 @@ public class pRutas extends pMenu {
     protected void onResume() {
         super.onResume();
         //Pantalla tutorial
+
+       /*
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
         boolean previouslyStarted = prefs.getBoolean(getString(R.string.p_rutas), false);
 
@@ -82,7 +84,7 @@ public class pRutas extends pMenu {
             edit.commit();
             fragPantallaTutorial popup = new fragPantallaTutorial(9);
             popup.show(getSupportFragmentManager(),"DialogFrag");
-        }
+        }*/
     }
 
 
