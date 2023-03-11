@@ -71,7 +71,7 @@ public class pRegistrar extends AppCompatActivity {
             }
         });
 
-        //Boton de Confirmar Contrasena -
+        //Boton de Contrasena
         EditText passwordEditText = findViewById(R.id.rgr_2_txt_iContra);
         Drawable lockDrawable = ContextCompat.getDrawable(this, R.drawable.ic_action_lock);
         Drawable eyeDrawable = ContextCompat.getDrawable(this, R.drawable.ic_visibility);
