@@ -29,8 +29,10 @@
 
     <!-- Pantalla Login -->
     <string name="LOGIN_TXT_Inicio">Enter your name</string>
-    <string name="LOGIN_BTN_Iniciar">START</string>
+    <string name="LOGIN_BTN_Iniciar">LOGIN</string>
+    <string name="LOGIN_BTN_Registrar">SIGN UP</string>
     <string name="LOGIN_EDIT_HINT">Username</string>
+    <string name="LOGIN_PASS_HINT">Password</string>
     <string name="LOGIN_EDIT_TOAST">Enter your username</string>
     <string name="LOGIN_LOG_TOAST">"Searching for Update"</string>
     <string name="LOGIN_ACT_TOAST">"Updating..."</string>
@@ -40,7 +42,14 @@
     <string name="REG_BTN_Volver">BACK</string>
     <string name="REG_TXT_Correo">E-mail</string>
     <string name="REG_TXT_Contraseña">Password</string>
-    <string name="REG_TXT_RepContraseña">Repet Password</string>
+    <string name="REG_TXT_RepContraseña">Repeat Password</string>
+    <!-- Pantalla Registrarse TOASTS'-->
+    <string name="TOAST_REG_TXT_Correo">Enter a valid email address</string>
+    <string name="TOAST_REG_TXT_Contraseña">Enter password</string>
+    <string name="TOAST_REG_TXT_RepContraseña">Confirm password</string>
+    <string name="TOAST_REG_TXT_RepContraseña2">The passwords do not match</string>
+
+
 
     <!-- Main Screen -->
     <string name="PRIN_BTN_Layout">EVENT</string>

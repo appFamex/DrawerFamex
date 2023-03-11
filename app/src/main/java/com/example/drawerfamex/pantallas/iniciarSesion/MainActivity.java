@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     //Karen
     EditText nombreUsuario;
-    Button btningresar;
+    Button btningresar, btnRegistrar;
     //BD
     private FichasPabVieModel PabViewModel;
     private FichasChalViewModel ChalViewModel;
@@ -128,6 +128,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         contenedor = (ConstraintLayout) findViewById(R.id.constrainLogIn);
         nombreUsuario = findViewById(R.id.log_1_lbl_iNombreUsuario);
         btningresar = findViewById(R.id.log_3_btn_log);
+        btnRegistrar = findViewById(R.id.log_3_btn_reg);
+
 
         nombreUsuario.setText(prefs.getString(NOMBRE_USUARIO,""));
         version = prefs.getInt(VERSION,0);
@@ -171,6 +173,16 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             @Override
             public void onClick(View view) {
                 Toast.makeText(getBaseContext(),getString(R.string.LOGIN_LOG_TOAST), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        //BTN Registrar
+       btnRegistrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            //    Toast.makeText(getBaseContext(),getString(R.string.LOGIN_LOG_TOAST), Toast.LENGTH_SHORT).show();
+                fadeTransitionJava(contenedor, pRegistrar.class);
+
             }
         });
 

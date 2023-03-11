@@ -29,7 +29,9 @@
     <!-- Pantalla Login -->
     <string name="LOGIN_TXT_Inicio">Entrez votre nom</string>
     <string name="LOGIN_BTN_Iniciar">COMMENCER</string>
+    <string name="LOGIN_BTN_Registrar">REGISTRE</string>
     <string name="LOGIN_EDIT_HINT">"Nom d'utilisateur"</string>
+    <string name="LOGIN_PASS_HINT">Mot de passe</string>
     <string name="LOGIN_EDIT_TOAST">"Entrez votre nom d'utilisateur"</string>
     <string name="LOGIN_LOG_TOAST">"Recherche de mise à jour"</string>
     <string name="LOGIN_ACT_TOAST">"Mise à jour en cours..."</string>
@@ -40,6 +42,11 @@
     <string name="REG_TXT_Correo">"Courriel"</string>
     <string name="REG_TXT_Contraseña">"Mot de passe"</string>
     <string name="REG_TXT_RepContraseña">"Répéter le mot de passe"</string>
+    <!-- Pantalla Registrarse TOASTS'-->
+    <string name="TOAST_REG_TXT_Correo">Entrez une adresse e-mail valide</string>
+    <string name="TOAST_REG_TXT_Contraseña">Entrez un mot de passe</string>
+    <string name="TOAST_REG_TXT_RepContraseña">Confirmez le mot de passe</string>
+    <string name="TOAST_REG_TXT_RepContraseña2">Les mots de passe ne correspondent pas</string>
 
     <!-- Pantalla principal -->
     <string name="PRIN_BTN_Layout">ÉVÉNEMENT</string>

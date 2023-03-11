@@ -2,12 +2,16 @@ package com.example.drawerfamex.pantallas.iniciarSesion;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.text.InputType;
 import android.text.TextUtils;
 import android.util.Patterns;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,6 +21,7 @@ import android.widget.Toast;
 import com.example.drawerfamex.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -66,7 +71,83 @@ public class pRegistrar extends AppCompatActivity {
             }
         });
 
-    }
+        //Boton de Confirmar Contrasena -
+        EditText passwordEditText = findViewById(R.id.rgr_2_txt_iContra);
+        Drawable lockDrawable = ContextCompat.getDrawable(this, R.drawable.ic_action_lock);
+        Drawable eyeDrawable = ContextCompat.getDrawable(this, R.drawable.ic_visibility);
+
+// Set the bounds of the drawables to match their intrinsic sizes
+        if (lockDrawable != null) {
+            lockDrawable.setBounds(0, 0, lockDrawable.getIntrinsicWidth(), lockDrawable.getIntrinsicHeight());
+        }
+        if (eyeDrawable != null) {
+            eyeDrawable.setBounds(0, 0, eyeDrawable.getIntrinsicWidth(), eyeDrawable.getIntrinsicHeight());
+        }
+
+// Set the compound drawables for the EditText
+        passwordEditText.setCompoundDrawablesWithIntrinsicBounds(lockDrawable, null, eyeDrawable, null);
+
+        //Poder ver/ocultar la contrasena cuando se toca el icono del ojo
+        passwordEditText.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                final int DRAWABLE_RIGHT = 2;
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+                    if (event.getRawX() >= (passwordEditText.getRight() - passwordEditText.getCompoundDrawables()[DRAWABLE_RIGHT].getBounds().width())) {
+                        if (passwordEditText.getInputType() == InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD) {
+                            passwordEditText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                        } else {
+                            passwordEditText.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                        }
+                        passwordEditText.setSelection(passwordEditText.getText().length());
+                        return true;
+                    }
+                }
+                return false;
+            }
+        });
+
+        //Boton de Confirmar Contrasena -
+        EditText passwordEditText2 = findViewById(R.id.rgr_3_txt_iRepContra);
+        Drawable lockDrawable2 = ContextCompat.getDrawable(this, R.drawable.ic_action_lock);
+        Drawable eyeDrawable2 = ContextCompat.getDrawable(this, R.drawable.ic_visibility);
+
+// Set the bounds of the drawables to match their intrinsic sizes
+        if (lockDrawable2 != null) {
+            lockDrawable2.setBounds(0, 0, lockDrawable2.getIntrinsicWidth(), lockDrawable2.getIntrinsicHeight());
+        }
+        if (eyeDrawable2 != null) {
+            eyeDrawable2.setBounds(0, 0, eyeDrawable2.getIntrinsicWidth(), eyeDrawable2.getIntrinsicHeight());
+        }
+
+// Set the compound drawables for the EditText
+        passwordEditText2.setCompoundDrawablesWithIntrinsicBounds(lockDrawable2, null, eyeDrawable2, null);
+
+        //Poder ver/ocultar la contrasena cuando se toca el icono del ojo
+        passwordEditText2.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                final int DRAWABLE_RIGHT = 2;
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+                    if (event.getRawX() >= (passwordEditText2.getRight() - passwordEditText2.getCompoundDrawables()[DRAWABLE_RIGHT].getBounds().width())) {
+                        if (passwordEditText2.getInputType() == InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD) {
+                            passwordEditText2.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                        } else {
+                            passwordEditText2.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                        }
+                        passwordEditText2.setSelection(passwordEditText2.getText().length());
+                        return true;
+                    }
+                }
+                return false;
+            }
+        });
+
+
+   }
+
+
+
 
     public void validarDatos() {
         correo = etxtCorreo.getText().toString();
@@ -74,13 +155,13 @@ public class pRegistrar extends AppCompatActivity {
         confirmarcontraseña = etxtConfirmarContraseña.getText().toString();
 
         if (!Patterns.EMAIL_ADDRESS.matcher(correo).matches()) { // valida @ y .com
-            Toast.makeText(this, "Ingrese correo valido", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.TOAST_REG_TXT_Correo), Toast.LENGTH_SHORT).show();
         } else if (TextUtils.isEmpty(contraseña)) {
-            Toast.makeText(this,"Ingrese contraseña ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.TOAST_REG_TXT_Contraseña), Toast.LENGTH_SHORT).show();
         } else if (TextUtils.isEmpty(confirmarcontraseña)){
-            Toast.makeText(this,"Confirme contraseña ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.TOAST_REG_TXT_RepContraseña), Toast.LENGTH_SHORT).show();
         } else if(!contraseña.equals(confirmarcontraseña)){
-            Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.TOAST_REG_TXT_RepContraseña2), Toast.LENGTH_SHORT).show();
         } else{
             crearCuenta();
         }

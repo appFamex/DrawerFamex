@@ -292,7 +292,7 @@ public class pItinerario extends pMenu {
                             intent.putExtra(Intent.EXTRA_SUBJECT, "FAMEX");
                             intent.putExtra(Intent.EXTRA_TEXT, "Te hacemos la cordial bienvenida a FAMEX 2023");
                             //Toast.makeText(getBaseContext(), "¡Disfruta de tus actividades y comparte con tus amigos!"+dato+numConf, Toast.LENGTH_SHORT).show();
-                            Toast.makeText(getBaseContext(), "¡Disfruta de tus actividades" + dato + "y comparte con tus amigos!"+ "C1", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getBaseContext(), "¡Disfruta de tus actividades" + dato + "y comparte con tus amigos!", Toast.LENGTH_SHORT).show();
                             Intent shareIntent = Intent.createChooser(intent, "Compatir");
                             PackageManager pm = getApplicationContext().getPackageManager();
                             try{

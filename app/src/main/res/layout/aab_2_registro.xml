@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/drawer_Layout"
     android:background="@drawable/backgroundhome"
     tools:context=".pantallas.iniciarSesion.pRegistrar">
@@ -50,6 +51,8 @@
                     android:textColorHint="@color/white"
                     tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
+
+
                 <EditText
                     android:id="@+id/rgr_2_txt_iContra"
                     android:layout_width="match_parent"
@@ -59,12 +62,15 @@
                     android:layout_marginRight="20dp"
                     android:backgroundTint="@color/white"
                     android:drawableLeft="@drawable/ic_action_lock"
+                    android:drawableRight="@drawable/ic_visibility"
                     android:hint="@string/REG_TXT_Contraseña"
                     android:inputType="textPassword"
                     android:lines="1"
                     android:minHeight="48dp"
                     android:textColor="@color/white"
-                    android:textColorHint="@color/white" />
+                    android:textColorHint="@color/white"/>
+
+
 
                 <TextView
                     android:id="@+id/txtcontcontraseña_reg"
@@ -76,6 +82,7 @@
                     android:textColor="@color/white"
                     android:textSize="15sp" />
 
+
                 <EditText
                     android:id="@+id/rgr_3_txt_iRepContra"
                     android:layout_width="match_parent"
@@ -85,6 +92,7 @@
                     android:layout_marginRight="20dp"
                     android:backgroundTint="@color/white"
                     android:drawableLeft="@drawable/ic_action_lock"
+                    android:drawableRight="@drawable/ic_visibility"
                     android:hint="@string/REG_TXT_RepContraseña"
                     android:inputType="textPassword"
                     android:lines="1"
@@ -110,7 +118,9 @@
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="25dp"
                     android:layout_marginRight="25dp"
-                    android:background="@color/boton"
+                    android:backgroundTint="@color/boton"
+                    android:fontFamily="@font/helvetica"
+                    android:textColor="@color/white"
                     android:onClick="ClickRegistrarse"
                     android:text="@string/REG_BTN_Registro" />
 
@@ -119,10 +129,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:layout_gravity="center"
+                    android:layout_margin="25dp"
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="25dp"
-                    android:background="@color/boton"
+                    android:backgroundTint="@color/boton"
+                    android:fontFamily="@font/helvetica"
+                    android:textColor="@color/white"
                     android:onClick="ClickVolver"
                     android:text="@string/REG_BTN_Volver" />
 
