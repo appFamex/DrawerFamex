@@ -5,12 +5,17 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.viewbinding.ViewBinding;
 
 import com.example.drawerfamex.BaseDatos.viewModel.FichasAnuncioVM;
 import com.example.drawerfamex.BaseDatos.viewModel.FichasInicioVM;
@@ -21,6 +26,7 @@ import com.example.drawerfamex.pantallas.evento.pEvento;
 import com.example.drawerfamex.R;
 
 import org.imaginativeworld.whynotimagecarousel.ImageCarousel;
+import org.imaginativeworld.whynotimagecarousel.listener.CarouselListener;
 import org.imaginativeworld.whynotimagecarousel.model.CarouselItem;
 
 import java.util.ArrayList;
@@ -90,28 +96,6 @@ public class pInicio extends pMenu {
                 return;
             }
 
-            /*if(prefs.getInt(IDIOMA_POP,0) == 0){
-                for(int i = 0; i < 1;i++){
-                    list2.add(new CarouselItem(lista.get(i).imagen1,lista.get(i).linkES));
-                    list2.add(new CarouselItem(lista.get(i).Imagen2,lista.get(i).linkES));
-                    list2.add(new CarouselItem(lista.get(i).Imagen3,lista.get(i).linkES));
-                }
-            }else if(prefs.getInt(IDIOMA_POP,0) == 1){
-                for(int i = 0; i < 1;i++){
-                    list2.add(new CarouselItem(lista.get(i).imagen1,lista.get(i).linkFR));
-                    list2.add(new CarouselItem(lista.get(i).Imagen2,lista.get(i).linkFR));
-                    list2.add(new CarouselItem(lista.get(i).Imagen3,lista.get(i).linkFR));
-                }
-            }else if(prefs.getInt(IDIOMA_POP,0) == 2){
-                for(int i = 0; i < 1;i++){
-                    list2.add(new CarouselItem(lista.get(i).imagen1,lista.get(i).linkEN));
-                    list2.add(new CarouselItem(lista.get(i).Imagen2,lista.get(i).linkEN));
-                    list2.add(new CarouselItem(lista.get(i).Imagen3,lista.get(i).linkEN));
-                }
-            }*/
-
-
-
             list2.add(new CarouselItem(lista.get(prefs.getInt(IDIOMA_POP,0)).imagen1));
             list2.add(new CarouselItem(lista.get(prefs.getInt(IDIOMA_POP,0)).Imagen2));
             list2.add(new CarouselItem(lista.get(prefs.getInt(IDIOMA_POP,0)).Imagen3));
@@ -119,6 +103,44 @@ public class pInicio extends pMenu {
 
             //Adding the data to the List
             carousel1.setData(list2);
+
+            carousel1.setCarouselListener(new CarouselListener() {
+                @Nullable
+                @Override
+                public ViewBinding onCreateViewHolder(@NonNull LayoutInflater layoutInflater, @NonNull ViewGroup viewGroup) {
+                    return null;
+                }
+
+                @Override
+                public void onBindViewHolder(@NonNull ViewBinding viewBinding, @NonNull CarouselItem carouselItem, int i) {
+                    // ...
+                }
+
+                @Override
+                public void onClick(int position, @NonNull CarouselItem carouselItem) {
+                    if (position==0){
+                        String link = "http://www.ifly.com.mx/";
+                        Uri Link= Uri.parse(link);
+                        Intent i = new Intent(Intent.ACTION_VIEW,Link);
+                        startActivity(i);
+                    }else if (position==1){
+                        String link = "https://www.geaerospace.com/";
+                        Uri Link= Uri.parse(link);
+                        Intent i = new Intent(Intent.ACTION_VIEW,Link);
+                        startActivity(i);
+                    }else{
+                        String link = "https://www.renaultazcapotzalco.com.mx/";
+                        Uri Link= Uri.parse(link);
+                        Intent i = new Intent(Intent.ACTION_VIEW,Link);
+                        startActivity(i);
+                    }
+                }
+
+                @Override
+                public void onLongClick(int i, @NonNull CarouselItem carouselItem) {
+                    // ...
+                }
+            });
 
         });
 
