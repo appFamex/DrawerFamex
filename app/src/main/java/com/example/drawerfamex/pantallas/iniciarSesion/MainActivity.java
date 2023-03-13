@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                         actionId == EditorInfo.IME_ACTION_NEXT ||
                         actionId == EditorInfo.IME_ACTION_SEND) {
                     // Ocultar teclado
-                    String userName = nombreUsuario.getText().toString();
+                    String userName = nombreUsuario.getText().toString().trim();
                     if(userName.isEmpty()){
                         Toast.makeText(getBaseContext(), getString(R.string.LOGIN_EDIT_TOAST), Toast.LENGTH_SHORT).show();
                     }else {
@@ -794,7 +794,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         btningresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String userName = nombreUsuario.getText().toString();
+                String userName = nombreUsuario.getText().toString().trim();
 
                 //Obtener Nombre Para PDF
                 

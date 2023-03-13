@@ -18,7 +18,7 @@
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="50dp"
         android:animateLayoutChanges="true"
-        android:background="@drawable/gr_rutas_ppp_fondo"
+        android:background="@drawable/gr_pasabus_ppp_fondo"
         android:backgroundTint="@color/transparencia"
         android:backgroundTintMode="screen"
         android:gravity="center|top"
@@ -65,7 +65,7 @@
             android:layout_marginLeft="3dp"
             android:layout_marginTop="15dp"
             android:layout_marginRight="3dp"
-            android:background="@drawable/gr_rutas_ppp_fondoh"
+            android:background="@drawable/gr_pasabus_ppp_fondoh"
             android:fontFamily="@font/plateiabold"
             android:gravity="center"
             android:text="PASABUS"
@@ -87,7 +87,7 @@
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
 
         <ScrollView
             android:id="@+id/scrollView4"
@@ -116,7 +116,7 @@
                 android:text="Al utilizar nuestro servicio de transporte por medio de la app, tendrás la confianza de viajar y llegar seguro a tu destino."
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:id="@+id/test"
@@ -129,8 +129,8 @@
 
                 <ImageView
                     android:id="@+id/pasabusIcon"
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     android:layout_marginTop="25dp"
                     android:layout_marginBottom="25dp"
                     android:background="@drawable/gr_pasabus_ppp_icp"

@@ -1,4 +1,4 @@
-package com.example.drawerfamex.backend.models.login;
+package com.example.drawerfamex.backend.models;
 
 import com.example.drawerfamex.backend.models.MessageError;
 

@@ -46,23 +46,30 @@
         <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aad_4_itinerario.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aah_8_chalets.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aai_9_expo_estatica.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aak_11_francia.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aaj_10_famex.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aak_11_francia.xml" value="0.18068965517241378" />
+        <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aam_13_muma.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aam_13_popup_3.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aan_14_popup_pasabus.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aan_14_prefamex.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aao_15_hoteles.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aao_15_hoteles_imghotel.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aap_16_popup.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aaq_17_preguntas.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/aax_23_perfil.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/activity_accesos.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/activity_food_court.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/fragment_frag_p_bienvenida.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/fragment_frag_popup_expo_estatica.xml" value="0.25" />
         <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/fragment_frag_popup_ventana.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/itemlayout_conferencias.xml" value="0.4354243542435424" />
         <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/itemlayout_itinerario.xml" value="0.5744089012517385" />
+        <entry key="..\:/Users/YO/Documents/respaldo 2/Respaldo/FamexAppv0.1.2/app/src/main/res/layout/main_toolbahorizontal.xml" value="0.67" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
