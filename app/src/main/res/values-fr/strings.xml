@@ -365,4 +365,7 @@ Vos informations peuvent être transférées à des sociétés dans d\'autres pa
     <!-- Restaurantes -->
     <string name="TMP_RESTAURANTES">Prochainement</string>
 
+    <!-- Boton BACK -->
+    <string name="BTN_BACK">ATRASSS</string>
+
 </resources>

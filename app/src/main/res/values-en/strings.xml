@@ -370,4 +370,7 @@ Your information may be transferred to companies in other countries. By using th
     <!-- Restaurantes -->
     <string name="TMP_RESTAURANTES">Coming soon</string>
 
+    <!-- Boton BACK -->
+    <string name="BTN_BACK">MAL</string>
+
 </resources>
