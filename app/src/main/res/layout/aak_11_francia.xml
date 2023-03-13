@@ -55,43 +55,63 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
 
+
+
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_below="@id/avion"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="40dp"
+                    android:layout_marginBottom="100dp"
                     android:gravity="center"
                     android:orientation="horizontal">
-                    <LinearLayout
+
+                    <HorizontalScrollView
                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="25dp"
+                        app:layout_constraintVertical_bias="0.592">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
                         app:layout_constraintVertical_weight="10">
+                        |
+
                         <ImageView
-                        android:id="@+id/fr_link_img1"
-                        android:layout_width="73dp"
-                        android:layout_height="58dp"
-                        android:layout_margin="2dp"
-                        android:src="@drawable/fr_img_link1" />
+                            android:id="@+id/fr_link_img1"
+                            android:layout_width="73dp"
+                            android:layout_height="58dp"
+                            android:layout_margin="2dp"
+                            android:src="@drawable/fr_img_link1" />
+
                         <ImageView
-                        android:id="@+id/fr_link_img2"
-                        android:layout_width="73dp"
-                        android:layout_height="58dp"
-                        android:layout_margin="2dp"
-                        android:src="@drawable/fr_img_link2" />
+                            android:id="@+id/fr_link_img2"
+                            android:layout_width="73dp"
+                            android:layout_height="58dp"
+                            android:layout_margin="2dp"
+                            android:src="@drawable/fr_img_link2" />
+
                         <ImageView
                             android:id="@+id/fr_link_img3"
                             android:layout_width="73dp"
                             android:layout_height="58dp"
                             android:layout_margin="2dp"
                             android:src="@drawable/fr_img_link3" />
+
                         <ImageView
                             android:id="@+id/fr_link_img4"
                             android:layout_width="73dp"
                             android:layout_height="58dp"
                             android:layout_margin="2dp"
                             android:src="@drawable/fr_img_link4" />
+
                         <ImageView
                             android:id="@+id/fr_link_img5"
                             android:layout_width="73dp"
@@ -99,8 +119,10 @@
                             android:layout_margin="2dp"
                             android:src="@drawable/fr_img_link5" />
                     </LinearLayout>
+                    </HorizontalScrollView>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
 
                 <LinearLayout
                     android:id="@+id/linearLayout5"
