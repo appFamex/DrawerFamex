@@ -30,11 +30,9 @@
         android:layout_width="90dp"
         android:layout_height="35dp"
         android:layout_weight="1"
-
-        android:gravity="center|start"
-        android:drawableLeft="@drawable/famex_ic_flecha_right"
-
-        android:src="@drawable/famex_ic_flecha_right"
+        android:gravity="center"
+        android:drawableLeft="@drawable/famex_ic_flech4_right"
+        android:src="@drawable/famex_ic_flech4_right"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
