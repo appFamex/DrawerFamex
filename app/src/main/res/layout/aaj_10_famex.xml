@@ -120,21 +120,26 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="5dp"
                                         android:orientation="vertical"
-                                        app:layout_constraintBottom_toBottomOf="@+id/MENU_img_perfil"
-                                        app:layout_constraintEnd_toEndOf="@+id/MENU_img_perfil"
-                                        app:layout_constraintStart_toStartOf="@+id/MENU_img_perfil"
-                                        app:layout_constraintTop_toTopOf="@+id/MENU_img_perfil">
+                                        app:layout_constraintBottom_toBottomOf="@+id/FMX_img_perfil"
+                                        app:layout_constraintEnd_toEndOf="@+id/FMX_img_perfil"
+                                        app:layout_constraintStart_toStartOf="@+id/FMX_img_perfil"
+                                        app:layout_constraintTop_toTopOf="@+id/FMX_img_perfil"
+                                        app:layout_constraintHorizontal_bias="0.647"
+                                        app:layout_constraintVertical_bias="0.15">
 
                                         <TextView
                                             android:id="@+id/fmx_1_txt_scroll_titulo1"
                                             android:layout_width="match_parent"
-                                            android:layout_height="49dp"
+                                            android:layout_height="wrap_content"
                                             android:layout_gravity="center"
                                             android:layout_marginTop="10dp"
                                             android:fontFamily="@font/plateiabold"
                                             android:gravity="center"
                                             android:text="@string/FMX_TXT_SCROLL_T1"
+                                            android:justificationMode="inter_word"
                                             android:textColor="@color/white"
                                             android:textSize="20sp"
                                             app:layout_constraintEnd_toEndOf="parent"
@@ -151,7 +156,7 @@
                                             android:lineSpacingExtra="6dp"
                                             android:text="@string/FMX_TXT_SCROLL_TXT_1"
                                             android:textColor="@color/white"
-                                            android:textSize="17sp"
+                                            android:textSize="15sp"
                                             app:layout_constraintEnd_toEndOf="@+id/MENU_img_perfil"
                                             app:layout_constraintTop_toBottomOf="@+id/fmx_1_txt_scroll_titulo1" />
                                     </LinearLayout>
@@ -192,7 +197,7 @@
                                         <TextView
                                             android:id="@+id/fmx_2_txt_scroll_titulo2"
                                             android:layout_width="match_parent"
-                                            android:layout_height="49dp"
+                                            android:layout_height="wrap_content"
                                             android:layout_marginTop="10dp"
                                             android:fontFamily="@font/plateiabold"
                                             android:gravity="center"
@@ -216,7 +221,7 @@
                                             android:lineSpacingExtra="6dp"
                                             android:text="@string/FMX_TXT_SCROLL_TXT_2"
                                             android:textColor="@color/white"
-                                            android:textSize="17sp"
+                                            android:textSize="15sp"
                                             app:layout_constraintEnd_toEndOf="@+id/secondimage"
                                             app:layout_constraintTop_toBottomOf="@+id/fmx_2_txt_scroll_titulo2" />
 
@@ -259,7 +264,7 @@
                                         <TextView
                                             android:id="@+id/fmx_3_txt_scroll_titulo3"
                                             android:layout_width="match_parent"
-                                            android:layout_height="49dp"
+                                            android:layout_height="wrap_content"
                                             android:layout_gravity="center"
                                             android:layout_marginTop="10dp"
                                             android:fontFamily="@font/plateiabold"
@@ -284,7 +289,7 @@
                                             android:lineSpacingExtra="6dp"
                                             android:text="@string/FMX_TXT_SCROLL_TXT_3"
                                             android:textColor="@color/white"
-                                            android:textSize="17sp"
+                                            android:textSize="15sp"
                                             app:layout_constraintEnd_toEndOf="@+id/thirdimage"
                                             app:layout_constraintTop_toBottomOf="@+id/fmx_3_txt_scroll_titulo3" />
                                     </LinearLayout>

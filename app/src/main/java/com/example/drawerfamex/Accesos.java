@@ -60,7 +60,7 @@ public class Accesos extends AppCompatActivity {
         PDFView pdfView = findViewById(R.id.pdfView);
 
 
-        /*
+
         File pdfFile = new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "recursos"+File.separator+"PDF7"+ "." + "pdf");
 
         if(pdfFile.exists()){
@@ -68,9 +68,9 @@ public class Accesos extends AppCompatActivity {
         }else{
             pdfView.fromAsset("acceosprioritarios.pdf").load();
         }
-        */
 
-        File pdfFileES = new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "recursos"+File.separator+"PDF7"+ "." + "pdf");
+
+        /*File pdfFileES = new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "recursos"+File.separator+"PDF7"+ "." + "pdf");
         File pdfFileFR = new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "recursos"+File.separator+"PDF5"+ "." + "pdf");
         File pdfFileEN = new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "recursos"+File.separator+"PDF6"+ "." + "pdf");
 
@@ -93,7 +93,7 @@ public class Accesos extends AppCompatActivity {
             }else{
                 pdfView.fromAsset("mapallenons7.pdf").load();
             }
-        }
+        }*/
 
         pdfView.setMinZoom(1);
         pdfView.setMidZoom(3);

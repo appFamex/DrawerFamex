@@ -55,7 +55,16 @@ public class Sanitizacion extends AppCompatActivity {
 
         PDFView pdfView = findViewById(R.id.pdfView);
 
-        File pdfFileES = new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "recursos"+File.separator+"PDF8"+ "." + "pdf");
+
+        File pdfFile = new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "recursos"+File.separator+"PDF8"+ "." + "pdf");
+
+        if(pdfFile.exists()){
+            pdfView.fromFile(pdfFile).load();
+        }else{
+            pdfView.fromAsset("puntodesanitizacion.pdf").load();
+        }
+
+        /*File pdfFileES = new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "recursos"+File.separator+"PDF8"+ "." + "pdf");
         File pdfFileFR = new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "recursos"+File.separator+"PDF1"+ "." + "pdf");
         File pdfFileEN = new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "recursos"+File.separator+"PDF0"+ "." + "pdf");
 
@@ -78,7 +87,7 @@ public class Sanitizacion extends AppCompatActivity {
             }else{
                 pdfView.fromAsset("mapabellons1.pdf").load();
             }
-        }
+        }*/
 
 
 

@@ -14,7 +14,7 @@
         android:orientation="vertical"
         android:background="@drawable/fondofrancia">
 
-        <include layout="@layout/main_toolbar" />
+        <include layout="@layout/main_toolbarperfil" />
 
         <LinearLayout
             android:layout_width="match_parent"
