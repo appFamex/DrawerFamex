@@ -1,7 +1,10 @@
 package com.example.drawerfamex.backend;
 
+import com.example.drawerfamex.backend.interfaces.CustomersClient;
 import com.example.drawerfamex.backend.interfaces.LoginClient;
 import com.example.drawerfamex.backend.interfaces.SecurityClient;
+import com.example.drawerfamex.backend.models.customers.Customer;
+import com.example.drawerfamex.backend.models.customers.MessageCustomer;
 import com.example.drawerfamex.backend.models.login.MessageLogin;
 import com.example.drawerfamex.backend.models.login.Role;
 import com.example.drawerfamex.backend.models.login.User;
@@ -19,6 +22,73 @@ import java.util.List;
 
 public class DataService {
 
+    public Customer registerCustomer(Customer customer) throws FamexException {
+        // preparamos objeto de respuesta
+
+        try {
+            // creamos cliente http retrofit
+            Retrofit retrofit = new Retrofit.Builder()
+                    .baseUrl("http://a038559e72dc64ec4a602a8d10b97c08-26840281.us-east-2.elb.amazonaws.com:8762")
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+
+            // creamos interfaz para cliente de http
+            CustomersClient service = retrofit.create(CustomersClient.class);
+
+            // creamos payload para el request
+            MessageCustomer message = new MessageCustomer();
+            message.set
+            // acaba payload request
+
+            // configura la llamada
+            Call<MessageCustomer> call = service.registerCustomer(message);
+
+            // ejecuta la llamada
+            call.enqueue(new Callback<MessageLogin>() {
+
+                @Override
+                /**
+                 * Este metodo se ejecuta cuando se realizo una conexion correcta. Aplica para cualquier codigo http
+                 */
+                public void onResponse(Call<MessageLogin> call, Response<MessageLogin> response) {
+                    // imprimimos codigo HTTP de respuesta
+                    System.out.println("Codigo http respuesta: " + response.code());
+
+                    // extraemos el body
+                    MessageLogin messageResponse = response.body();
+
+                    // validamos el body
+                    if (messageResponse.getStatusOperation().getStatus() == 0 && messageResponse.getUsers() != null && !messageResponse.getUsers().isEmpty()) {
+                        // extraemos datos necesarios de la respuesta
+                        User userResponse = messageResponse.getUsers().get(0);
+
+                        responseMap.put("RefreshToken", userResponse.getAccessToken());
+                        responseMap.put("AuthToken", userResponse.getRefreshToken());
+                        responseMap.put("Username", userResponse.getUsername());
+                    } else {
+                        // si la validacion no es correcta, se imprime un mensaje de error
+                        System.out.println("Error en el servicio: Codigo"
+                                + messageResponse.getStatusOperation().getStatus() + ", Descripcion: "
+                                + messageResponse.getStatusOperation().getDescription());
+                    }
+                }
+
+                @Override
+                /**
+                 * Este metodo se ejecuta cuando sucede un error en la llamada (no en el servicio)
+                 */
+                public void onFailure(Call<MessageLogin> call, Throwable throwable) {
+                    System.out.println("Error en el servicio: " + throwable.getMessage());
+                }
+            });
+        } catch (Exception e) {
+            // cachamos alguna excepcion en el proceso de configuracion de cliente y de payload
+            System.out.println("Error en la llamada: " + e.getMessage());
+        }
+
+        // regresamos la respuesta
+        return customer;
+    }
     public HashMap<String, String> login(String username, String password) throws FamexException {
         // preparamos objeto de respuesta
         final HashMap<String, String> responseMap = new HashMap<>();
