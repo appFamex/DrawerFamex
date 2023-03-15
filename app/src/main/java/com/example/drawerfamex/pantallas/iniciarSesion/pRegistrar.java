@@ -153,12 +153,15 @@ public class pRegistrar extends AppCompatActivity {
         correo = etxtCorreo.getText().toString();
         contraseña = etxtContraseña.getText().toString();
         confirmarcontraseña = etxtConfirmarContraseña.getText().toString();
+        String passwordPattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[!@#$%^&*()\\-+]).{8,}$";
 
         if (!Patterns.EMAIL_ADDRESS.matcher(correo).matches()) { // valida @ y .com
             Toast.makeText(this, getString(R.string.TOAST_REG_TXT_Correo), Toast.LENGTH_SHORT).show();
         } else if (TextUtils.isEmpty(contraseña)) {
             Toast.makeText(this, getString(R.string.TOAST_REG_TXT_Contraseña), Toast.LENGTH_SHORT).show();
-        } else if (TextUtils.isEmpty(confirmarcontraseña)){
+        } else if (!contraseña.matches(passwordPattern)) {
+            Toast.makeText(this, getString(R.string.TOAST_REG_TXT_ContraseñaInvalida), Toast.LENGTH_SHORT).show();
+        }  else if (TextUtils.isEmpty(confirmarcontraseña)){
             Toast.makeText(this, getString(R.string.TOAST_REG_TXT_RepContraseña), Toast.LENGTH_SHORT).show();
         } else if(!contraseña.equals(confirmarcontraseña)){
             Toast.makeText(this, getString(R.string.TOAST_REG_TXT_RepContraseña2), Toast.LENGTH_SHORT).show();

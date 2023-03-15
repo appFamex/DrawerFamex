@@ -49,6 +49,7 @@
     <string name="TOAST_REG_TXT_Contraseña">Ingrese contraseña </string>
     <string name="TOAST_REG_TXT_RepContraseña">Confirme contraseña </string>
     <string name="TOAST_REG_TXT_RepContraseña2">Las contraseñas no coinciden</string>
+    <string name="TOAST_REG_TXT_ContraseñaInvalida">Las contraseñas no cumple con las especificaciones requeridas</string>
 
 
     <!-- Pantalla Principal -->

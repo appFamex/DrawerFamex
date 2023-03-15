@@ -47,6 +47,8 @@
     <string name="TOAST_REG_TXT_Contraseña">Entrez un mot de passe</string>
     <string name="TOAST_REG_TXT_RepContraseña">Confirmez le mot de passe</string>
     <string name="TOAST_REG_TXT_RepContraseña2">Les mots de passe ne correspondent pas</string>
+    <string name="TOAST_REG_TXT_ContraseñaInvalida">Le pass doesnt work</string>
+
 
     <!-- Pantalla principal -->
     <string name="PRIN_BTN_Layout">ÉVÉNEMENT</string>
