@@ -48,7 +48,7 @@
     <string name="TOAST_REG_TXT_Contraseña">Enter password</string>
     <string name="TOAST_REG_TXT_RepContraseña">Confirm password</string>
     <string name="TOAST_REG_TXT_RepContraseña2">The passwords do not match</string>
-    <string name="TOAST_REG_TXT_ContraseñaInvalida">The password does not match the requeriments</string>
+    <string name="TOAST_REG_TXT_ContraseñaInvalida">Password Does Not Meet Requirements</string>
 
 
 

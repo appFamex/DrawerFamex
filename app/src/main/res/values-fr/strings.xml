@@ -47,7 +47,7 @@
     <string name="TOAST_REG_TXT_Contraseña">Entrez un mot de passe</string>
     <string name="TOAST_REG_TXT_RepContraseña">Confirmez le mot de passe</string>
     <string name="TOAST_REG_TXT_RepContraseña2">Les mots de passe ne correspondent pas</string>
-    <string name="TOAST_REG_TXT_ContraseñaInvalida">Le pass doesnt work</string>
+    <string name="TOAST_REG_TXT_ContraseñaInvalida">Le mot de passe ne répond pas aux exigences</string>
 
 
     <!-- Pantalla principal -->

@@ -102,7 +102,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private ProgressDialog progressDialog;
     private int max = 1, maxf = 1, maxT;
     private static final String fversion = "version";
-    private String URLnVer = "https://pfamex-9f791.web.app/";
+    //private String URLnVer = "https://pfamex-9f791.web.app/";
+    private String URLnVer = "http://famex-test.s3-website.us-east-2.amazonaws.com/";
     private boolean check = false;
     private int version, versionMAX, contador=0;
     ArrayList<String> links;
@@ -335,7 +336,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                         Log.e("ERROR","a" + respuesta.getNumeroVersiones());
                         links = new ArrayList<>();
                         for(int i = version;i<versionMAX;i++){
-                            String URL = "https://pfamex-9f791.web.app/";
+                            String URL = "http://famex-test.s3-website.us-east-2.amazonaws.com/";
                             URL = URL + fversion + i + "/";
                             Log.e("ERROR","a" + URL);
                             links.add(URL);
@@ -409,6 +410,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                                 File.separator + "recursos" + File.separator + nombreIMG + "." + mFormat.name().toLowerCase();
                         dbFicha = new fichaChalets(apiFicha.getId(),apiFicha.getNombre(),path, apiFicha.getnBloque(),apiFicha.isFrancia(),apiFicha.getDescripcionES(),apiFicha.getDescripcionEN(), apiFicha.getDescripcionFR());
                         ChalViewModel.insertFicha(dbFicha, new FichasChalViewModel.OnFichaSaveListenerVM() {
+                            //LOGICA AGREGAR
                             @Override
                             public void onFichaSavedVM() {
                                 actualizarDialog();
